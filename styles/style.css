@@ -82,16 +82,17 @@ li {
 /* Header section */
 nav {
   padding-top: 21px;
+  margin-bottom: 150px;
 }
 .wrapper {
   margin: -1px auto;
   background-image: url("../assets/images/bgimage1.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1440px;
-  height: 960px;
+  background-size: cover;
+  height: 100vh;
   position: relative;
 }
+
 .nav__links ul {
   gap: 32px;
 }
@@ -176,7 +177,6 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 250px 150px 470px 132px;
 }
 .hero h1 {
   color: #fff;
