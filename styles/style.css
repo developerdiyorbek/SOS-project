@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.ttf") format("truetype");
@@ -13,7 +14,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.ttf") format("truetype");
@@ -25,7 +27,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.ttf") format("truetype");
@@ -37,7 +40,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.ttf") format("truetype");
@@ -48,29 +52,132 @@
 
 /* Normalize CSS */
 * {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
 }
-.container{
-    max-width: 1140px;
-    width: 100%;
-    padding: 0 16px;
-    margin: 0 auto;
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
-.d-flex{
+.d-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.d-flex-only{
+.d-flex-only {
   display: flex;
   align-items: center;
 }
-/* /Normalize CSS */
+.hero {
+  margin:  0 auto;
+  width: 1440px;
+  height: 961px;
+  background-image: url("/SOS-project/assets/images/bg_image_2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200px;
+}
+.hero_uptitle {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.hero_title {
+  width: 364.851px;
+  height: 173.572px;
+  flex-shrink: 0;
+  font-family: Bebas Neue;
+  width: 100%;
+  max-width: 410px;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.underline {
+  position: relative;
+}
+.underline img {
+  position: absolute;
+  margin-top: 25px;
+}
+.hero_desc {
+  width: 100%;
+  max-width: 364px;
+  color: #fff;
+  margin-left: 200px;
+  margin-top: 60px;
+  /* font-family: Open Sans; */
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* opacity: 0.9; */
+}
+.hero_desc_2 {
+  width: 364.851px;
+  height: 173.572px;
+  color: #fff;
+  /*font-family: Open Sans;*/
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 22px;
+  /* opacity: 0.9; */
+  margin-left: 200px;
+}
+
+.img_box {
+  background-color: transparent;
+}
+.hero_desc span {
+  color: #fff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 130%;
+}
+.hero_img {
+  margin-left: 29px;
+}
+.hero_text:hover {
+  width: 122px;
+  background: #ffb548 linear-gradient(to bottom,#ffb548,#91682a);
+  transition: 2s;
+  
+}
+
+.btn{
+  height: 30px  ;
+  position: relative;
+  bottom: 70px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
