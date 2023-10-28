@@ -3,10 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- /Font Awesome -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
   <body>
-    
+    <!-- Header Section -->
+    <header>
+      <div class="wrapper">
+        <div class="container">
+          <nav class="d-flex">
+            <div class="nav__logo">
+              <a href="#">
+                <img
+                src="./assets/logo/logo.svg"
+                alt="logo"
+                width="55"
+                height="55"
+              />
+              </a>
+            </div>
+
+            <div class="nav__links">
+              <ul class="d-flex-only">
+                <li>
+                  <a href="#">main</a>
+                </li>
+                <li>
+                  <a href="#">about</a>
+                </li>
+                <li>
+                  <a href="#">game features</a>
+                </li>
+                <li>
+                  <a href="#">System requirements</a>
+                </li>
+                <li>
+                  <a href="#">quotes</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav__right d-flex">
+              <div class="dropdown">
+                <button class="dropdown__link">
+                  ENG
+                  <span>
+                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                  </span>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a href="#">RUS</a>
+                  <a href="#">FRA</a>
+                  <a href="#">DEU</a>
+                </div>
+              </div>
+
+              <span class="nav__right-column"></span>
+
+              <div class="nav__right-icons">
+                <a href="#">
+                  <img
+                    src="./assets/icons/xboxicon.svg"
+                    class="xboxicon icons"
+                    alt="xbox"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/icons/steamicon.svg"
+                    alt="steam"
+                    class="icons"
+                    width="30"
+                    height="30"
+                  />
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="hero">
+            <h1>SURVIVE AT ALL COSTS</h1>
+            <h3>Experience new social battle royale game</h3>
+            <a
+              href="https://www.youtube.com/watch?v=bY807vw0Mno"
+              target="_blank"
+            >
+              <button class="hero__btn d-flex-only">
+                <p>Buy Now on Steam</p>
+                <span class="hero__btn-column"></span>
+                <span class="hero__btn-cost">$14.99</span>
+              </button>
+            </a>
+          </div>
+
+          <div class="thestory">
+            <img
+              src="./assets/icons/scrolldownbutton.svg"
+              alt="scroll"
+              width="68"
+              height="32"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header Section -->
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote d-flex-only">
+          <div class="quote-section__left">
+            <h3>What people think?</h3>
+            <h2>Press quotes</h2>
+            <p>
+              Our goal is to create a product and service that you’re satisfied
+              with and use it every day. This is why we’re constantly working on
+              our services to make it better every day and really listen to what
+              our users has to say.
+            </p>
+            <a href="#">
+              <button>read more testimonials</button>
+            </a>
+          </div>
+          <div class="quote-section__right">
+            <div class="quotecard">
+              <div class="quotecard__top d-flex-only">
+                <div class="quotecardimg">
+                  <img
+                    src="./assets/icons/quotecard1.svg"
+                    alt="card1"
+                    width="65"
+                    height="65"
+                  />
+                </div>
+                <div>
+                  <h3>Evan Lahti</h3>
+                  <h4>PC Gamer</h4>
+                </div>
+                <div class="top__icon">
+                  <a href="#">
+                    <img
+                      src="./assets/icons/twiitericon.svg"
+                      alt="twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p>“One of my gaming highlights of the year.”</p>
+              <span>October 18, 2018</span>
+            </div>
+            <div class="quotecard">
+              <div class="quotecard__top d-flex-only">
+                <div class="quotecardimg">
+                  <img
+                    src="./assets/icons/quotecard2.svg"
+                    alt="card1"
+                    width="65"
+                    height="65"
+                  />
+                </div>
+                <div>
+                  <h3>Jada Griffin</h3>
+                  <h4>Nerdreactor</h4>
+                </div>
+                <div class="top__icon">
+                  <a href="#">
+                    <img
+                      src="./assets/icons/twiitericon.svg"
+                      alt="twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p>
+                “The next big thing in the world of streaming and survival
+                games.”
+              </p>
+              <span>December 21, 2018</span>
+            </div>
+            <div class="quotecard">
+              <div class="quotecard__top d-flex-only">
+                <div class="quotecardimg">
+                  <img
+                    src="./assets/icons/quotecard3.svg"
+                    alt="card1"
+                    width="65"
+                    height="65"
+                  />
+                </div>
+                <div>
+                  <h3>Aaron Williams</h3>
+                  <h4>Uproxx</h4>
+                </div>
+                <div class="top__icon">
+                  <a href="#">
+                    <img
+                      src="./assets/icons/twiitericon.svg"
+                      alt="twitter"
+                      width="18"
+                      height="14"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p>
+                “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                Ridiculous.”
+              </p>
+              <span>December 24, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Quote Section -->
+
+    <!-- Subscribe section -->
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe d-flex">
+          <div class="subscribe__left">
+            <img
+              src="./assets/images/subscribeimage.png"
+              alt="subscribe"
+              width="446"
+              height="696"
+            />
+          </div>
+          <div class="subscribe__right">
+            <h3>Want to stay in touch?</h3>
+            <h2>newsletter SUBSCRIBE</h2>
+            <p>
+              In order to start receiving our news, all you have to do is enter
+              your email address. Everything else will be taken care of by us.
+              We will send you emails containing information about game. We
+              don’t spam.
+            </p>
+            <form action="https://echo.htmlacademy.ru">
+              <div class="subscribe-input">
+                <label for="email">Your email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="d.sulaymonov@gmail.com"
+                />
+              </div>
+
+              <button type="submit">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Subscribe section -->
+
+    <!-- footer section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer__top d-flex">
+          <div>
+            <img
+              src="./assets/logo/logo.svg"
+              alt="logo"
+              width="90"
+              height="90"
+            />
+          </div>
+
+          <div class="footer-links">
+            <ul class="d-flex-only">
+              <li><a href="#">MAIN</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">game features</a></li>
+              <li><a href="#">System requirements</a></li>
+              <li><a href="#">quotes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-socials d-flex-only">
+           <div>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f" style="color: #635d5d"></i>
+            </a>
+           </div>
+           <div>
+            <a href="#">
+              <i class="fa-brands fa-twitter" style="color: #5f5b5b"></i>
+            </a>
+           </div>
+            <div>
+              <a href="#">
+                <i class="fa-brands fa-youtube" style="color: #636060"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__column"></div>
+
+        <div class="footer__bottom">
+          <p>© 2018 Outpost Games, Inc. All Rights Reserved</p>
+          <p>
+            <a href="#">
+              Privacy Policy | Terms of Services | Code of Conduct
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer section -->
   </body>
 </html>
