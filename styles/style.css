@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueBold.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueBold.ttf") format("truetype");
@@ -13,7 +14,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueRegular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular.ttf") format("truetype");
@@ -25,7 +27,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueBold_1.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueBold_1.ttf") format("truetype");
@@ -37,7 +40,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot");
-  src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/bebasnueu/BebasNeueRegular_1.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.woff2") format("woff2"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.woff") format("woff"),
     url("../assets/fonts/bebasnueu/BebasNeueRegular_1.ttf") format("truetype");
@@ -48,29 +52,92 @@
 
 /* Normalize CSS */
 * {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
 }
-.container{
-    max-width: 1140px;
-    width: 100%;
-    padding: 0 16px;
-    margin: 0 auto;
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
-.d-flex{
+.d-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.d-flex-only{
+.d-flex-only {
   display: flex;
   align-items: center;
 }
 /* /Normalize CSS */
+
+img {
+  width: 1441px;
+  height: 960px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.card ul li a {
+  width: 352.863px;
+  height: 27.673px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  margin: 160px;
+  padding-left: 403px;
+}
+
+h3 {
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 633.19px;
+  height: 73.643px;
+  flex-shrink: 0;
+  text-decoration: none;
+  margin: 185px;
+  padding-left: 225px;
+}
+
+.card .card-item-b.img {
+  width: 573.198px;
+  height: 400.688px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #979797;
+}
+
+.item img {
+  width: 573.198px;
+  height: 400.688px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #979797;
+  margin: 130px;
+  padding-top: 275px;
+}
