@@ -13,7 +13,7 @@
     />
     <!-- /Font Awesome -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Document</title>
+    <title>SOS-project</title>
   </head>
   <body>
     <!-- Header Section -->
@@ -106,15 +106,18 @@
                 <span class="hero__btn-cost">$14.99</span>
               </button>
             </a>
-          </div>
 
-          <div class="thestory">
-            <img
-              src="./assets/icons/scrolldownbutton.svg"
-              alt="scroll"
-              width="68"
-              height="32"
-            />
+            <div class="thestory">
+              <a href="#quote-section">
+                <img
+                src="./assets/icons/scrolldownbutton.svg"
+                alt="scroll"
+                width="68"
+                height="32"
+              />
+              </a>
+              </div>
+            
           </div>
         </div>
       </div>
@@ -122,7 +125,7 @@
     <!-- /Header Section -->
 
     <!-- Quote Section -->
-    <section class="quote-section">
+    <section class="quote-section" id="quote-section">
       <div class="container">
         <div class="quote d-flex-only">
           <div class="quote-section__left">
@@ -280,12 +283,14 @@
       <div class="container">
         <div class="footer__top d-flex">
           <div>
-            <img
+            <a href="#" class="footer-logo">
+              <img
               src="./assets/logo/logo.svg"
               alt="logo"
               width="90"
               height="90"
             />
+            </a>
           </div>
 
           <div class="footer-links">
@@ -298,22 +303,18 @@
             </ul>
           </div>
 
-          <div class="footer-socials d-flex-only">
-           <div>
+          <div class="footer-socials">
+          
             <a href="#">
               <i class="fa-brands fa-facebook-f" style="color: #635d5d"></i>
             </a>
-           </div>
-           <div>
             <a href="#">
               <i class="fa-brands fa-twitter" style="color: #5f5b5b"></i>
             </a>
-           </div>
-            <div>
               <a href="#">
                 <i class="fa-brands fa-youtube" style="color: #636060"></i>
-              </a>
-            </div>
+            </a>
+          
           </div>
         </div>
 
@@ -330,7 +331,5 @@
       </div>
     </footer>
     <!-- /footer section -->
-    
-   
-  </body>
+
 </html>
