@@ -55,6 +55,7 @@
   margin: 0;
   padding: 0;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 1140px;
@@ -81,15 +82,15 @@ li {
 
 /* Header section */
 nav {
-  padding-top: 21px;
+  padding-top: 40px;
+  margin-bottom: 150px;
 }
 .wrapper {
   margin: -1px auto;
   background-image: url("../assets/images/bgimage1.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1440px;
-  height: 960px;
+  background-size: 100vw 100vh;
+  height: 100vh;
   position: relative;
 }
 .nav__links ul {
@@ -98,16 +99,24 @@ nav {
 .nav__links ul li a {
   color: #fff;
   font-family: "Bebas Neue";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   padding: 6px;
-  transition: all ease 0.6s;
 }
-.nav__links ul li a:hover {
-  color: #ffb548;
+.nav__links ul li a::after{
+  content: " ";
+  display: block;
+  width: 0;
+  height: 3px;
+  margin: auto;
+  background-color: #f3af34;
+  transition: width 0.6s;
+}
+.nav__links ul li  a:hover::after{
+  width: 100%;
 }
 .dropdown {
   position: relative;
@@ -119,7 +128,7 @@ nav {
   background: none;
   color: #fff;
   font-family: "Bebas Neue";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1.2px;
 }
@@ -163,10 +172,10 @@ nav {
   margin: 0 24px;
 }
 .nav__right-icons .icons {
-  transition: all ease 0.6s;
+  transition: all ease 1s;
 }
 .nav__right-icons .icons:hover {
-  transform: scale(1.3);
+  transform: rotate(1080deg);
 }
 .nav__right-icons .xboxicon {
   margin-right: 17px;
@@ -176,7 +185,6 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 250px 150px 470px 132px;
 }
 .hero h1 {
   color: #fff;
@@ -204,6 +212,7 @@ nav {
   justify-content: center;
   border: none;
   transition: all ease 0.6s;
+  margin-bottom: 260px;
 }
 .hero__btn:hover {
   cursor: pointer;
@@ -232,31 +241,25 @@ nav {
   font-weight: 700;
   line-height: normal;
 }
-.thestory {
-  position: absolute;
-  bottom: 53px;
-  left: 686px;
-  right: 686px;
-}
+
 /* /Header section */
 
 /* Quote Section */
 .quote-section {
-  margin: 0 auto;
   background-color: rgb(20, 20, 20);
   background-image: url("../assets/images/bgquote.png");
   background-repeat: no-repeat;
-  width: 1440px;
-  height: 960px;
+  background-size: 100vw 100vh;
+  height: 100vh;
 }
 .quote-section__left {
-  margin: 200px 190px 0 0;
+  margin: 80px 180px 0 0;
 }
 .quote-section__right {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 160px;
+  margin-top: 80px;
 }
 .quote-section__right .quotecard:nth-child(2) {
   margin-right: 130px;
@@ -300,9 +303,11 @@ nav {
   font-weight: 700;
   text-transform: capitalize;
   border: none;
+  transition: all ease 0.4s;
+  cursor: pointer;
 }
 .quote-section__left a button:hover {
-  cursor: pointer;
+  background: white;
 }
 .quote-section__right {
   width: 630px;
@@ -377,11 +382,12 @@ nav {
 
 /* Subscribe section */
 .subscribe-section {
-  width: 1440px;
-  margin: 0 auto;
   background-color: #080a0b;
+  width: 100vw;
+  height: 100vh;
 }
 .subscribe {
+  padding-top: 100px;
   gap: 70px;
 }
 .subscribe__right h3 {
@@ -450,16 +456,15 @@ input::placeholder {
   background: linear-gradient(195deg, #ffb548 11.27%, #f3af34 90.4%);
   vertical-align: top;
   margin-left: 15px;
-}
-.subscribe__right button:hover {
   cursor: pointer;
 }
+.subscribe__right button:hover {
+  background: white;
+ }
 /* /Subscribe section */
 
 /* footer section */
 .footer-section {
-  width: 1440px;
-  margin: 0 auto;
   background-color: #080a0b;
 }
 .footer__top {
@@ -481,38 +486,68 @@ input::placeholder {
   transition: transform 0.4s;
 }
 .footer-links ul li a:hover {
-  transform: scale(1.2);
+  transform: translateY(-3px);
 }
-.footer-socials div {
+.footer-socials{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.footer-socials div:nth-child(1):hover {
-  background-color: #1977f2;
-}
-.footer-socials div:nth-child(2):hover {
-  background-color: #41bbf4;
-}
-.footer-socials div:nth-child(3):hover {
-  background-color: #ff0000;
-}
-.footer-socials div:hover i {
-  color: white !important;
+  gap: 30px;
 }
 .footer-socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+.footer-socials a:nth-child(1):before{
+  content: " ";
+  background-color: #0765FF;
+  width: 60px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition:  0.5s;
+}
+.footer-socials a:nth-child(2):before{
+  content: " ";
+  background-color: #1DA1F1;
+  width: 60px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition:  0.5s;
+}
+.footer-socials a:nth-child(3):before{
+  content: " ";
+  background-color: #FF0000;
+  width: 60px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition: 0.5s;
+}
+.footer-socials a:hover::before{
+  height: 60px;
+}
+.footer-socials a i {
+  position: relative;
+  z-index: 5;
+  font-size: 25px;
+  line-height: 60px;
+}
+.footer-socials a:hover i {
+  color: white !important;
+}
+
 .footer__column {
   width: 1140px;
   height: 2px;
@@ -520,7 +555,7 @@ input::placeholder {
   opacity: 0.5;
   margin-bottom: 22px;
 }
-.footer__bottom{
+.footer__bottom {
   display: flex;
   justify-content: space-between;
 }
@@ -541,5 +576,11 @@ input::placeholder {
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+.footer-logo img {
+  transition: transform 0.5s;
+}
+.footer-logo:hover img{
+  transform: translateY(-5px);
 }
 /* /footer section */
